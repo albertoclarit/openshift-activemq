@@ -80,18 +80,12 @@ objects:
     runPolicy: Serial
     source:
       git:
-        uri: https://github.com/natronq/openshift-activemq.git
+        uri: https://github.com/albertoclarit/openshift-activemq.git
       type: Git
     strategy:
       type: Docker
     successfulBuildsHistoryLimit: 5
     triggers:
-    - github:
-        secret: iC5AZ9ft5C5XgfrYkKQT
-      type: GitHub
-    - generic:
-        secret: -z44GI1g-dXhvhWSGc5W
-      type: Generic
     - type: ConfigChange
     - imageChange: {}
       type: ImageChange
