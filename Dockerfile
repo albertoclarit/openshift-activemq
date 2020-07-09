@@ -5,6 +5,7 @@ MAINTAINER Michael Staehler <michael.staehler.ext@dkv-mobility.com>
 ENV ACTIVEMQ_VERSION=5.15.2 \
     POSTGRES_JDBC_DRIVER_VERSION=9.4.1212 \
     ACTIVEMQ_TCP=61616 \
+    ACTIVEMQ_OPTS=-Xms1G\ -Xmx2G \
     ACTIVEMQ_HOME=/opt/activemq
 
 ENV ACTIVEMQ=apache-activemq-$ACTIVEMQ_VERSION    
